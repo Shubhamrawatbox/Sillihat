@@ -1,0 +1,12 @@
+$after-color:#19B5FE;
+$black:#000;
+$white:#fff;
+$button:#2980b9;
+$nav-link:#151515;
+
+@mixin flex {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

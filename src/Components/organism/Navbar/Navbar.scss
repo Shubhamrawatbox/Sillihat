@@ -1,0 +1,39 @@
+.navbar {
+  top: -100%;
+  transition: all 1s ease-in-out;
+  line-height: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index:99 !important;
+  background-color:#fff;
+  box-shadow: 2px 2px 6px rgba($color: #000000, $alpha: 0.2);
+  & .upper-banner {
+    height: 2.5rem;
+    & .inner-banner {
+      padding: 0 2.5rem;
+      display: flex;
+      text-align: center;
+
+      & .slug {
+        margin-right: 1.25rem;
+      }
+      & .email {
+        padding-left: 1.25rem;
+      }
+    }
+  }
+  & .navbar-list {
+    margin: 0 0.9375rem;
+    width: 100%;
+    height: 3.125rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  &.active{
+    top: 0;
+    transition: all 1s ease-in-out;
+  }
+}
+

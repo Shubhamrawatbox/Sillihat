@@ -1,0 +1,29 @@
+@import "../../../Sass/Global.scss";
+.navlinks {
+  width: 100%;
+  @include flex;
+  & .menu {
+    @include flex;
+    & .menu-list {
+      padding-right: 1.25rem;
+      font-weight: 800;
+      & a {
+        position: relative;
+        color: #000;
+        &::after {
+          margin-top: 4px;
+          position: absolute;
+          content: "";
+          width: 0%;
+          height: 3px;
+          background: $after-color;
+          display: block;
+          transition: all 0.6s ease-in-out;
+        }
+      }
+      &:hover ::after {
+        width: 100%;
+      }
+    }
+  }
+}
