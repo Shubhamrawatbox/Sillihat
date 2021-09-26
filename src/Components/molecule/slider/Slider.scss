@@ -38,19 +38,19 @@
     transform: translate3d(0px, 0px, 0px);
     animation: zoom 5s infinite;
     &.first {
-      & .inner-content{
+      & .inner-content {
         color: #34495e;
-        animation: first 2s;
+        animation: first 3s;
       }
     }
     &.second {
-      & .content h1{
+      & .inner-content {
         animation: second 2s;
       }
     }
-    &.third{
-      & .inner-content{
-        color: #7f8c8d;
+    &.third {
+      & .inner-content {
+        color: #000000;
         animation: third 2s;
       }
     }
@@ -86,34 +86,34 @@
       }
       100% {
         opacity: 1;
+        transform: scale(1.1);
       }
     }
     @keyframes second {
-      to{
+      to {
         opacity: 1;
         transform: translateY(0px);
       }
-      from{
+      from {
         opacity: 0;
         transform: translateY(-10%);
       }
     }
     @keyframes third {
-      to{
+      to {
         opacity: 1;
         transform: translateY(0px);
       }
-      from{
+      from {
         opacity: 0;
         transform: translateY(12%);
       }
     }
     @keyframes zoom {
-      to{
+      to {
         transform: scale(1.1);
-
       }
-      from{
+      from {
         transform: scale(1);
       }
     }

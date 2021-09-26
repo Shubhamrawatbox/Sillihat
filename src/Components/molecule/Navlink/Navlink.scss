@@ -3,6 +3,7 @@
   width: 100%;
   @include flex;
   & .menu {
+    margin-right: 10rem;
     @include flex;
     & .menu-list {
       padding-right: 1.25rem;

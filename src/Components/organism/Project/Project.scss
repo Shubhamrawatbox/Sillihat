@@ -1,0 +1,67 @@
+.project {
+  background: #000;
+  padding-top: 6.25rem;
+  padding-bottom: 4.0625rem;
+  & .about-project {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    & a {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      font-size: 2rem;
+      text-decoration: none;
+      font-weight: 800;
+      text-transform: capitalize;
+
+      &:hover::before {
+        transform: rotate(40deg);
+        top: 50%;
+        left: 45%;
+        width: 20%;
+        opacity: 0.6;
+        transition: all 0.7s ease-in-out;
+      }
+      &:hover::after {
+        transform: rotate(-40deg);
+        top: 50%;
+        right: 35%;
+        width: 20%;
+        opacity: 0.6;
+        transition: all 0.7s ease-in-out;
+      }
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        background-color: #fff;
+        height: 3px;
+        transition: all 0.7s ease-in-out;
+      }
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        background-color: #fff;
+        height: 3px;
+        transition: all 0.7s ease-in-out;
+      }
+    }
+  }
+}
+@keyframes projectanimation {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.about-project.active{
+  animation: projectanimation 3s;
+}

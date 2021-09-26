@@ -1,0 +1,29 @@
+@import '../../../Sass/Global.scss';
+.service {
+  padding: 5rem 0;
+  & .service-content {
+      margin-bottom: 5rem;
+  }
+  & .about-service {
+      margin: 3rem auto;
+    & .box {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: repeat(3, 1fr);
+      & .innerbox{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 330px;
+          height: 170px;
+          & .icons{
+              font-size: 4rem;
+              color:$after-color;
+          }
+          & .title span{
+              font-weight: 900 !important;
+          }
+      }
+    }
+  }
+}
