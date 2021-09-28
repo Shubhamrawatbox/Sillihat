@@ -1,20 +1,48 @@
-@import '../../../Sass/Global.scss';
-.head{
-    font-family: 'Montserrat';
-    text-align: center;
+@import "../../../Sass/Global.scss";
+.head {
+  font-family: "Montserrat";
+  position: relative;
 }
-.head-Big{
-font-size: 3rem;
+.head-Big {
+  font-size: 3rem;
 }
-.head-medium{
-font-size: 2.3rem;
+.head-medium {
+  font-size: 2.3rem;
 }
-.head-small{
-font-size: 1.5rem;
+.head-small {
+  font-size: 1.5rem;
 }
-.head-black{
+.head-black {
+  color: #000;
+}
+.head-white {
+  color: #fff;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
 
+.whiteAfter::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10%;
+  height: 3px;
+  background: $after-color;
+  left: 50%;
+  bottom: -5%;
+  transform: translateX(-50%);
 }
-.head-white{
-
+.blackAfter::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20%;
+  height: 3px;
+  background: #fff;
+  left: 0%;
+  bottom: -5%;
 }
