@@ -1,9 +1,10 @@
 import React from "react";
 import Heading from "../../atom/heading/Heading";
 import Paragraph from "../../atom/paragraph/Paragraph";
-import Span from "../../atom/span/Span";
+import Card from "../../molecule/cards/Card";
+
 import "./Service.scss";
-import { Carddata } from "../../Data/Carddata";
+
 
 const Service = () => {
   return (
@@ -18,18 +19,7 @@ requirements gathering to final product launch and everything in between."
           />
         </div>
         <div className="about-service">
-          <div className="box">
-            {Carddata.map((data, index) => {
-              return (
-                <div className="innerbox" key={index}>
-                  <div className="icons">{data.image}</div>
-                  <div className="title">
-                    <Span props={data.title} headsize="font-third" />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          <Card/>
         </div>
       </section>
     </>
