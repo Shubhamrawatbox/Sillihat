@@ -3,6 +3,7 @@ import React from "react";
 import Banner from "./components/organism/Banner/Banner";
 import Clients from "./components/organism/Clients/Clients";
 import FirstSection from "./components/organism/FirstSection/FirstSection";
+import Footer from "./components/organism/Footer/Footer";
 
 import Navbar from "./components/organism/Navbar/Navbar";
 import Payment from "./components/organism/Payment/Payment";
@@ -24,6 +25,7 @@ const App = () => {
       <Technology/>
       <Team/>
       <Clients/>
+      <Footer/>
     </>
   );
 };

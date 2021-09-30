@@ -1,0 +1,51 @@
+@import "../../../Sass/Global.scss";
+
+.footer {
+  background: #000;
+  clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 6rem 0px 3.75rem;
+  & .footer-para {
+    width: 50%;
+    margin: auto;
+  }
+  & .content {
+    padding: 1rem 3rem;
+    align-items: center;
+    & .content-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      align-items: center;
+      text-align: center;
+      & .wrapper-box {
+        display: flex;
+        padding: 0;
+        height: 150px;
+        margin: 0 1rem;
+        & .left {
+          color: $after-color;
+          margin-top: -1rem;
+          font-size: 4rem;
+        }
+        & .right p {
+          margin: 0;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+    & .contact-detail{
+      width: 300px;
+      margin: auto;
+      text-align: center;
+      & .address{
+        color: $white;
+        font-weight: 900;
+        font-size: 1.3rem;
+        font-family: 'Montserrat';
+        & p{
+        margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

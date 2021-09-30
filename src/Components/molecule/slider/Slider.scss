@@ -36,7 +36,7 @@
     opacity: 1;
     background-color: cornflowerblue;
     transform: translate3d(0px, 0px, 0px);
-    animation: zoom 5s infinite;
+    animation: zoom 4s infinite;
     &.first {
       & .inner-content {
         color: #34495e;
@@ -111,10 +111,10 @@
     }
     @keyframes zoom {
       to {
-        transform: scale(1.1);
+        transform: scale(1);
       }
       from {
-        transform: scale(1);
+        transform: scale(1.06);
       }
     }
     & p {

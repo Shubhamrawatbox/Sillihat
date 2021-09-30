@@ -7,7 +7,7 @@ import { TiSocialLinkedin } from "react-icons/ti";
 
 const Team = () => {
   return (
-    <section className="team">
+    <section className="team" id="team">
       <Heading prop="The Team." />
       <div className="teampara">
         <Paragraph

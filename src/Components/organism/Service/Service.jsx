@@ -7,9 +7,10 @@ import "./Service.scss";
 
 
 const Service = () => {
+  
   return (
     <>
-      <section className="service">
+      <section className="service" id="service">
         <div className="service-content">
           <Heading prop="What We Offer." />
           <Paragraph

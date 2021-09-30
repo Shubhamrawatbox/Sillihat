@@ -26,7 +26,9 @@ const Navbar = () => {
               />
             </li>
             <li className="email">
-              <Span props="@infoskillhut.com" />
+              <Span props="@infoskillhut.com"
+              headsize="font-secondary"
+              />
             </li>
           </ul>
         </div>

@@ -4,7 +4,7 @@ import { TechnologyData } from '../../Data/Carddata';
 const PhotoTechnology = () => {
   const [animate,getanimate]=useState(false);
   window.addEventListener('scroll',()=>{
-    if(window.scrollY > 2500){
+    if(window.scrollY > 2200){
       getanimate(true)
     }else{
       getanimate(false)
