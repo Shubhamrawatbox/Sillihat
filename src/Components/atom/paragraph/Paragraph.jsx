@@ -4,7 +4,7 @@ import './paragraph.scss';
 const Paragraph = ({ prop,bold,size,color,text }) => {
   const Bold = ["para-bold", "para-none"];
   const Size = ["para-big", "para-small"];
-  const Color=['blackcolor','whitecolor'];
+  const Color=['blackcolor','whitecolor','greycolor'];
   const Text=['aligncenter','alignleft'];
   const checkBold=Bold.includes(bold) ? bold : Bold[0];
   const checkSize=Size.includes(size) ? size : Size[0];

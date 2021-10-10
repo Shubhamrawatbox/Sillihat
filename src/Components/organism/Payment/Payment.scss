@@ -1,3 +1,4 @@
+@import "../../../Sass/Global.scss";
 .payment {
   margin-top: 1rem;
   background: url("../../../Images/Background/bg.jpg");
@@ -8,8 +9,11 @@
   & .inner-payment {
     width: 60%;
     padding: 5rem 0 4rem 1rem;
-    & .paragraph{
-        margin-left: -5rem !important;
+    & .paragraph {
+      margin-left: -5rem !important;
+    }
+    @include medium {
+      width: auto;
     }
   }
 }

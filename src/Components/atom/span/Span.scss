@@ -1,12 +1,18 @@
+@import '../../../Sass/Global.scss';
 .font-primary {
     font-size: 13px;
+    color: red;
+
   }
   .font-secondary {
     font-size: 15px;
   }
   .font-third{
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 900 !important;
+      @include tablet{
+        font-size: 1.125rem;
+      }
   }
   .weight-primary {
     font-weight: 500;

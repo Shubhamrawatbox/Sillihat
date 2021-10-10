@@ -6,6 +6,9 @@ body{
     font-family: 'Poppins';
     height: 200vh;
 }
+html{
+    scroll-behavior: smooth;
+}
 ul{
     list-style: none;
 }
