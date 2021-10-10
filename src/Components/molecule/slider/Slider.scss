@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;1,600&display=swap");
+@import "../../../Sass/Global.scss";
 .sliders {
   width: 100%;
   position: relative;
@@ -13,6 +14,9 @@
     font-size: 4.5rem;
     z-index: 8;
     color: #fff;
+    @include medium{
+      display: none;
+    }
   }
   & .leftarrow {
     top: 50%;
@@ -36,13 +40,13 @@
     opacity: 1;
     background-color: cornflowerblue;
     transform: translate3d(0px, 0px, 0px);
-    animation: zoom 4s infinite;
-    &.first {
-      & .inner-content {
-        color: #34495e;
-        animation: first 3s;
-      }
-    }
+    // animation: zoom 4s infinite;
+    // &.first {
+    //   & .inner-content {
+    //     color: #34495e;
+    //     animation: first 3s;
+    //   }
+    // }
     &.second {
       & .inner-content {
         animation: second 2s;
@@ -76,6 +80,9 @@
       font-size: 5rem;
       text-transform: capitalize;
       line-height: 5.3125rem;
+      @include tablet{
+        font-size: 4rem;
+      }
     }
     @keyframes first {
       0% {
@@ -120,6 +127,9 @@
     & p {
       font-size: 0.9375rem;
       margin-top: -20px;
+    }
+    @include medium{
+      width: 80%;
     }
   }
 }

@@ -13,14 +13,14 @@ const Slider = ({ slides }) => {
     setcurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  useEffect(() => {
-    let slider = setInterval(() => {
-      setcurrent(current === length - 1 ? 0 : current + 1);
-    }, 3000);
-    return () => {
-      clearInterval(slider);
-    };
-  });
+  // useEffect(() => {
+  //   let slider = setInterval(() => {
+  //     setcurrent(current === length - 1 ? 0 : current + 1);
+  //   }, 3000);
+  //   return () => {
+  //     clearInterval(slider);
+  //   };
+  // });
   return (
     <div className="sliders">
       <RiArrowRightSLine className="arrow rightarrow" onClick={rightfunction} />

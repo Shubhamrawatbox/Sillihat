@@ -17,11 +17,13 @@
       grid-gap: 10px;
       align-items: center;
       text-align: center;
+      min-height: 360px;
       & .wrapper-box {
         display: flex;
         padding: 0;
         height: 150px;
         margin: 0 1rem;
+        justify-content: center;
         & .left {
           color: $after-color;
           margin-top: -1rem;
@@ -32,18 +34,21 @@
           padding-bottom: 1rem;
         }
       }
+      @include medium {
+        grid-template-columns: 1fr;
+      }
     }
-    & .contact-detail{
+    & .contact-detail {
       width: 300px;
-      margin: auto;
+      margin: 5rem auto;
       text-align: center;
-      & .address{
+      & .address {
         color: $white;
         font-weight: 900;
         font-size: 1.3rem;
-        font-family: 'Montserrat';
-        & p{
-        margin-top: 1rem;
+        font-family: "Montserrat";
+        & p {
+          margin-top: 1rem;
         }
       }
     }

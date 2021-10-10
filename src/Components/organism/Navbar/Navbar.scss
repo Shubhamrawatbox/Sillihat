@@ -1,11 +1,13 @@
+@import "../../../Sass/Global.scss";
 .navbar {
   top: -100%;
+
   transition: all 1s ease-in-out;
   line-height: 1rem;
   position: fixed;
   width: 100%;
-  z-index:99 !important;
-  background-color:#fff;
+  z-index: 99 !important;
+  background-color: #fff;
   box-shadow: 2px 2px 6px rgba($color: #000000, $alpha: 0.2);
   & .upper-banner {
     height: 2.5rem;
@@ -21,6 +23,9 @@
         padding-left: 1.25rem;
       }
     }
+    @include tablet {
+      display: none;
+    }
   }
   & .navbar-list {
     margin: 0 0.9375rem;
@@ -30,10 +35,27 @@
     text-align: center;
     align-items: center;
     padding: 1rem 0;
+    justify-content: space-between;
+    & .right{
+      & .menu-btn{
+        width: 32px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+        justify-content: space-between;
+
+        & span{
+          width: 100%;
+          height: 2px;
+          background-color: #000;
+
+        }
+      }
+    }
   }
-  &.active{
+  &.active {
     top: 0;
     transition: all 1s ease-in-out;
   }
 }
-

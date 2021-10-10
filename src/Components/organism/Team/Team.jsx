@@ -15,7 +15,7 @@ const Team = () => {
         Worked with 12 startups and businesses as a service provider.
         Experienced with top-notch MNCs and startups in Silicon Valley."
       size="para-small"
-      bold="para-none"
+     
         />
       </div>
       <div className="inner-team">
